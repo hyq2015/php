@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>视屏播放</title>
+    <style>
+        table{
+            border: 1px solid #dddddd;border-collapse: collapse;
+        }
+        th{
+            border: 1px solid #dddddd;padding: 0;
+        }
+        table tr{
+            border: 1px solid #dddddd;padding: 0;
+        }
+        table td{
+            border: 1px solid #dddddd;margin: 0;padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        video{
+            position: absolute;left: 10%;top: 0;display: none;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <thead>
+        <tr>
+            <th>视频图片</th>
+            <th>视频名称</th>
+            <th>视频范围</th>
+            <th>视频目的</th>
+            <th>上传时间</th>
+            <th>上传人</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td><a href="#" id="play">播放</a>&nbsp;<a href="#">修改</a>&nbsp;<a href="#">删除</a></td>
+        </tr>
+    </tbody>
+</table>
+<video id="video" src="" controls="controls" autoplay="autoplay"></video>
+<script>
+    window.onload= function () {
+        document.getElementById('play').onclick= function () {
+            document.getElementById('video').src='trailer.mp4';
+            document.getElementById('video').style.display='block';
+        }
+    }
+</script>
+</body>
+</html>
